@@ -7,6 +7,9 @@ const app = express();
 app.get('/', (req, res)=>{
     res.send('<h1>Bienvenido a mi servidor!</h1>')
 });
+app.get('/home', (req, res)=>{
+    res.send('<h1>Este es un servidor en Railway</h1>')
+});
 
 const PORT = process.env.PORT || 8080;
 
